@@ -8,6 +8,19 @@ Cuenta con un menú
 
 1. jugar 
 2. salir
+
+Al ejemplo anterior aún faltan algunas mejoras que hacer
+
+Elimina la duplicidad del código en OPCIONES almacenando
+en paquete que se llame `constantes` y crea un 
+archivo `opciones.py` donde almacenes las opciones 
+válidas del juego y reglas
+
+El juego debe funcionar con emojis: 🧱, 📄 y ✂️
+cambiando en las constantes y la lógica del juego
+
+Crea las reglas del juego en un diccionario 
+para determinar el ganador
  
 # Analisis
 Requisitos:

@@ -1,5 +1,5 @@
+from constantes import OPCIONES
 from random import choice
-OPCIONES = ["piedra", "papel", "tijera"]
 class Computadora:
     def __init__(self):
         self.nombre = "CPU"

@@ -1,3 +1,4 @@
+from constantes import REGLAS
 class Juego:
     def __init__(self, jugador, computadora):
         self.jugador = jugador
@@ -6,14 +7,9 @@ class Juego:
     def determinar_ganador(self, eleccion_jugador, eleccion_computadora):
         if eleccion_jugador == eleccion_computadora:
             return "Empate"
-        elif (
-            (eleccion_jugador == "piedra" and eleccion_computadora == "tijera") or
-            (eleccion_jugador == "papel" and eleccion_computadora == "piedra") or
-            (eleccion_jugador == "tijera" and eleccion_computadora == "papel")
-        ):
+        if REGLAS[eleccion_jugador] == eleccion_computadora:
             return f"{self.jugador} gana!"
-        else:
-            return f"{self.computadora} gana!"
+        return f"{self.computadora} gana!"
     
     def mostrar_elecciones(self, jugador, eleccion):
         print(f"{jugador} eligió: {eleccion}")

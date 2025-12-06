@@ -1,4 +1,4 @@
-OPCIONES = ["piedra", "papel", "tijera"]
+from constantes import OPCIONES
 class Jugador:
     def __init__(self, nombre):
         self.nombre = nombre

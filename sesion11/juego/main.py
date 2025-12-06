@@ -1,8 +1,9 @@
+from constantes import OPCIONES
 from clases import Jugador, Computadora
 from logica import Juego
 
 def main():
-    print("🎮 Bienvenido al juego de Piedra, Papel o Tijera")
+    print(f"🎮 Bienvenido al juego de {', '.join(OPCIONES)}")
     nombre = input("Introduce tu nombre: ")
     jugador = Jugador(nombre)
     computadora = Computadora()
